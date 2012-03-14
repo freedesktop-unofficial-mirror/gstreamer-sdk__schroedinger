@@ -158,7 +158,7 @@ libschroedinger_@SCHRO_MAJORMINOR@_la_LIBADD = \
 libschroedinger_@SCHRO_MAJORMINOR@_la_LDFLAGS = \
 	-no-undefined \
 	-version-info $(SCHRO_LIBVERSION) \
-	-export-symbols-regex '^schro_'
+	-export-symbols-regex '^_?(schro|orc)_'
 
 %.c.gcov: .libs/libschroedinger_@SCHRO_MAJORMINOR@_la-%.gcda %.c
 	$(GCOV) -b -f -o $^ > $@.out
