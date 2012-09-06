@@ -515,6 +515,7 @@ libschroedinger_@SCHRO_MAJORMINOR@_la_LIBADD = \
 	$(OPENGL_LIBS) \
 	$(ORC_LIBS) \
 	$(GCOV_LIBS) \
+	$(GTHREAD_LIBS) \
 	$(PTHREAD_LIBS)
 
 libschroedinger_@SCHRO_MAJORMINOR@_la_LDFLAGS = \
